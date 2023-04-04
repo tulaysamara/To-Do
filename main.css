@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    position: relative;
+    padding: 15px 15px;
+    background-color: rgba(18, 18, 18, 0.067);
+    font-size: 15pt;
+    list-style: none;
+    border-style:double;
+    border-color: rgba(76, 76, 76, 0.211);
+    -webkit-user-select: none;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    border-radius: 5px;
+    color: rgba(0, 0, 0, 0.819);
+}
+
+ul li:hover {
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+}
+
+ul li.checked {
+    background-color: rgba(86, 84, 87, 0.326);
+    text-decoration: line-through;
+    color: aliceblue;
+    
+}
+
+ul li.checked::before {
+    content: '';
+    border-style: double;
+    border-color: rgb(3, 3, 3);
+    border-width: 0px 2px 2px 0px;
+    top: 17px;
+    left: 220px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 5px;
+    position: absolute;
+}
+
+.main-div {
+    color: white;
+    text-align: center;
+    padding: 30px 25px;
+    background-color: rgba(117, 117, 117, 0.076);
+    border-radius: 20px;
+
+}
+h2 {
+    padding: 10px;
+    background-color: rgba(12, 11, 11, 0.164);
+    border-radius: 20px;
+   
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+
+.main-div::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+input {
+    margin: 0;
+    border: none;
+    width: 300px;
+    height: 40px;
+    padding: 11px;
+    font-size: 12pt;
+   
+}
+
+#addButton {
+    background-color: rgba(65, 62, 62, 0.791);
+    padding: 10px;
+    width: 30px;
+    text-align: center;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+#addButton:hover {
+    background-color: rgb(196, 210, 255);
+}
+.close {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    padding: 12px 16px;
+    transform: translate(0%, -50%);
+  }
+
+  .close:hover {
+    background-color: gray;
+  }
+#delete {
+    font-size: 12pt;
+    font-weight: bold;
+    width: 200px;
+    text-align: center;
+    
+    border-radius: 5px;
+    transition: 0.2s ;
+    padding: 10px;
+    margin: 30px;
+    background-color: rgba(0, 0, 0, 0.371);
+    color: rgba(0, 0, 0, 0.909);
+    cursor: pointer;
+    margin: 40px 200px;
+}
+
+#delete:hover {
+    background-color: white;
+    color: black;
+}
+
+#textArea {
+    border-radius: 5px;
+}

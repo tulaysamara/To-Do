@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <div class="main-div">
+        <h2> To Do List </h2>
+        <input type="text" id="textArea" placeholder="list your items here...">
+        <span onclick="newElement()" id="addButton"> ADD </span>
+    </div>
+
+    <ul id="UL">
+        <li class="checked">Doctor's Appointment<span class="close">x</span></li>
+        <li class="checked"> Clean my car<span class="close">x</span> </li>
+        <li> Buy milk <span class="close">x</span> </li>
+        <li> Finish homework <span class="close">x</span></li>
+        <li> Class meeting at 7pm <span class="close">x</span></li>
+    </ul>
+    <button type="button" id="delete" onclick="removeAll()">Clear items</button>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
