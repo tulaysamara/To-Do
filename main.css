@@ -10,7 +10,7 @@ ul {
 ul li {
     position: relative;
     padding: 15px 15px;
-    background-color: rgba(18, 18, 18, 0.067);
+    background-color: rgba(255, 255, 255, 0.067);
     font-size: 15pt;
     list-style: none;
     border-style:double;
@@ -24,7 +24,7 @@ ul li {
 }
 
 ul li:hover {
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(141, 135, 135, 0.149);
     cursor: pointer;
 }
 
@@ -41,7 +41,7 @@ ul li.checked::before {
     border-color: rgb(3, 3, 3);
     border-width: 0px 2px 2px 0px;
     top: 17px;
-    left: 220px;
+    left: 280px;
     transform: rotate(45deg);
     height: 15px;
     width: 5px;
@@ -52,15 +52,15 @@ ul li.checked::before {
     color: white;
     text-align: center;
     padding: 30px 25px;
-    background-color: rgba(117, 117, 117, 0.076);
-    border-radius: 20px;
+    background-color: rgba(124, 208, 236, 0.436);
+    border-radius: 10px;
 
 }
 h2 {
     padding: 10px;
-    background-color: rgba(12, 11, 11, 0.164);
+    background-color: rgba(12, 11, 11, 0.096);
     border-radius: 20px;
-   
+   border-style: double;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -75,7 +75,7 @@ h2 {
 input {
     margin: 0;
     border: none;
-    width: 300px;
+    width: 500px;
     height: 40px;
     padding: 11px;
     font-size: 12pt;
@@ -92,7 +92,7 @@ input {
 }
 
 #addButton:hover {
-    background-color: rgb(196, 210, 255);
+    background-color: rgb(197, 203, 221);
 }
 .close {
     cursor: pointer;
@@ -101,10 +101,12 @@ input {
     right: 0%;
     padding: 12px 16px;
     transform: translate(0%, -50%);
+    width: 40px;
   }
 
   .close:hover {
-    background-color: gray;
+    background-color: rgba(128, 128, 128, 0.106);
+    border-radius: 190px;
   }
 #delete {
     font-size: 12pt;
@@ -116,15 +118,15 @@ input {
     transition: 0.2s ;
     padding: 10px;
     margin: 30px;
-    background-color: rgba(0, 0, 0, 0.371);
+    background-color: rgba(129, 128, 138, 0.065);
     color: rgba(0, 0, 0, 0.909);
     cursor: pointer;
     margin: 40px 200px;
 }
 
 #delete:hover {
-    background-color: white;
-    color: black;
+    background-color: rgba(140, 131, 131, 0.598);
+    color: rgba(0, 0, 0, 0.588);
 }
 
 #textArea {

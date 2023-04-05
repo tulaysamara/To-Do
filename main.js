@@ -2,11 +2,11 @@ let closebtn = document.getElementsByClassName("close");
 
 let i;
 for (i = 0; i < closebtn.length; i++) {
-    closebtn[i].addEventListener("click", function () {
-        this.parentElement.style.display = "none";
-    });
+    closebtn[i].addEventListener("click", remove);
 }
-
+function remove() {
+    this.parentElement.style.display = "none";
+}
 
 let list = document.querySelector('ul');
 list.addEventListener('click', function (ev) {
@@ -25,27 +25,22 @@ function newElement() {
     } else {
         document.getElementById("UL").appendChild(li);
     }
-    document.getElementById("textArea").value= "";
+    document.getElementById("textArea").value = "";
 
     let span = document.createElement("SPAN");
     let txt = document.createTextNode("x");
-    span.className="close";
+    span.className = "close";
     span.appendChild(txt);
     li.appendChild(span);
 
-    for (i=0; i < close.length; i++) {
-        close[i].onclick = function() {
-            let div = this.parentElement;
-            div.style.display = "none";
-        }
-    };
+    span.addEventListener("click", remove);
 };
 
 //add by using enter key 
 
 let input = document.getElementById("textArea");
 
-input.addEventListener("keypress", function(event) {
+input.addEventListener("keypress", function (event) {
     if (event.key === "Enter") {
         event.preventDefault();
         document.getElementById("addButton").click();
@@ -54,7 +49,7 @@ input.addEventListener("keypress", function(event) {
 
 //clear items button work
 
-function removeAll () {
+function removeAll() {
     let lst = document.getElementsByTagName("ul");
-    lst[0].innerHTML= "";
+    lst[0].innerHTML = "";
 }
